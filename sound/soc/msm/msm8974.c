@@ -1400,7 +1400,7 @@ static int msm8974_configure_quat_mi2s_gpio(void)
 		ret = gpio_request(quat_mi2s_gpio[i].gpio_no,
 				quat_mi2s_gpio[i].gpio_name);
 
-		pr_info("%s: gpio = %d, gpio name = %s, rtn = %d\n", __func__,
+		pr_debug("%s: gpio = %d, gpio name = %s, rtn = %d\n", __func__,
 		quat_mi2s_gpio[i].gpio_no, quat_mi2s_gpio[i].gpio_name, ret);
 		gpio_set_value(quat_mi2s_gpio[i].gpio_no, 1);
 
