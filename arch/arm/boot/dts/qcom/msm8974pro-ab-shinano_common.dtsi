@@ -117,7 +117,7 @@
 
 	/* I2C : BLSP6 */
 	i2c@f9928000 {
-		cell-index = <6>;
+		cell-index = <3>;
 		compatible = "qcom,i2c-qup";
 		reg = <0xf9928000 0x1000>;
 		#address-cells = <1>;
